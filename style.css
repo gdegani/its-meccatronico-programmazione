@@ -1,0 +1,26 @@
+/* style.css */
+h1 {
+  color: #710403;
+  /* Replace with your desired color */
+  text-transform: uppercase;
+}
+
+.slidev-layout td {
+  font-size: 22px;
+  /*Modifica la dimensione del testo  */
+}
+
+.slidev-layout p {
+  font-size: 22px;
+  /*Modifica la dimensione del testo */
+  line-height: 1.5;
+  /*Aggiungi spaziatura tra le righe */
+}
+
+.slidev-layout ul {
+  font-size: 22px;
+  /* Modifica la dimensione del testo */
+  line-height: 1.5;
+  /*Aggiungi spaziatura tra le righe */
+}
+

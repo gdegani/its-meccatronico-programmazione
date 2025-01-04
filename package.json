@@ -4,13 +4,24 @@
   "private": true,
   "scripts": {
     "build": "slidev build",
-    "dev": "slidev --open",
+    "dev": "slidev",
+    "run": "slidev --open",
+    "remote": "slidev --remote",
+    "dev1": "slidev pages/slides1.md --open",
     "export": "slidev export"
   },
   "dependencies": {
-    "@slidev/cli": "^0.51.0-beta.4",
+    "@slidev/cli": "51.3.0",
     "@slidev/theme-default": "latest",
     "@slidev/theme-seriph": "latest",
+    "slidev-theme-academic": "latest",
+    "slidev-theme-excali-slide": "latest",
     "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "playwright-chromium": "^1.49.1",
+     "katex": ">=0.16.21",
+    "esbuild": ">=0.25.0",
+    "dompurify": ">=3.2.4"
   }
 }

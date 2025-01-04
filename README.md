@@ -1,11 +1,5 @@
-# Welcome to [Slidev](https://github.com/slidevjs/slidev)!
+# Elementi di programmazione e gestione dati in linguaggio "C"
 
-To start the slide show:
+Questo repository contiene le slide usate per il corso di "Elementi di programmazione e gestione dati" presso l'[ITS Meccatronico Veneto](https://www.itsmeccatronico.it).
 
-- `npm install`
-- `npm run dev`
-- visit <http://localhost:3030>
-
-Edit the [slides.md](./slides.md) to see the changes.
-
-Learn more about Slidev at the [documentation](https://sli.dev/).
+Le slides sono realizzate con il framwork [Slidev](https://sli.dev).
