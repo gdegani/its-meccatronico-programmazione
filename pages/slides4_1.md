@@ -185,11 +185,39 @@ for (i=N-1; i>=0; i--){
 - Scrivere un programma che chieda quanti valori verranno introdotti dalla tastiera (max 100), li chieda tutti e successivamente visualizzi prima tutti i valori pari nell’ordine in cui sono stati inseriti e poi tutti i valori dispari nell’ordine inverso.
 - Scrivere un programma che, dati in input N numeri reali, con N che al massimo vale 100, stampi quanti di essi sono maggiori della media e successivamente li stampi a video
 
+---
+layout: figure-side
+
+figureUrl: https://upload.wikimedia.org/wikipedia/commons/b/b9/Sieve_of_Eratosthenes_animation.gif
+
+---
+
+# Il crivello di Eratostene
+
+Il crivello di [Eratostene](https://it.wikipedia.org/wiki/Crivello_di_Eratostene) è un metodo che consente di trovare i numeri primi fino ad un certo n prefissato.
+
+- si scrivono tutti i numeri naturali a partire da 2 fino n
+- si cancellano tutti i multipli del primo numero
+- si passa al successivo numero non cancellato e si ripete l'operazione con i numeri che seguono
+
+---
+
+# Esercizio
+
+Scrivere un programma che richieda un numero n positivo e, usando il crivello di Eratostene, trovi e stampi i numeri primi minori o uguali a n.
+
+---
+
+# Soluzione crivello di Eratostene
+
+<<< @/examples/example08/main.c c {*}{lines:true,maxHeight:'400px'}
+
 
 ---
 
 # Matrici
 
+- Sono variabili vettoriali con due dimensioni
 - Definizione
 
 ```c
@@ -203,6 +231,66 @@ int matrice [ 10 ] [ 20 ];
 ```
 
 - Gli indici di riga e colonna vanno da 0 a N-1, dove N è la dimensione
+- Matrice con 5 righe ( da 0 a 4) e 10 colonne (da 0 a 9)
+
+```c
+int matrice [ 5 ][ 10 ];
+```
+
+---
+
+# Matrici
+
+Come per i vettori, il ciclo **for** si presta per attraversare righe e colonne:
+
+```c
+int matrice[RIGHE][COLONNE];
+for (r=0; r<RIGHE; r++)
+{
+    for (c=0; c<COLONNE; c++)
+        printf("%d ", matrice[r][c]);
+    printf("\n");
+}
+```
+
+---
+layout: two-cols
+
+---
+
+# Matrici
+
+- Le matrici sono memorizzate in un’area di memoria contigua per righe
+- La matrice m\[10\]\[20\] è memorizzata come 20 vettori consecutivi di 10 elementi
+- Un vettore o una matrice possono essere inizializzati elencando i valori delle singole celle della matrice o del vettore
+
+```c
+int matrice [2][3] = {1,2,3,4,5,6};
+```
+
+::right::
+<br>
+<br>
+
+||**0**|**1**|**2**|
+|---|---|---|---|
+|**0**|1|2|3|
+|**1**|4|5|6|
+
+---
+
+# Matrici
+
+- Non c'è limite al numero delle dimensioni 
+
+```c
+int matrice [DIM_1][DIM_2]...[DIM_N] ;
+```
+
+- Solitamente si usano costanti simboliche ( #define ) per definire le dimensioni dei vettori o delle matrici
+- Non è possibile copiare o confrontare due
+generici vettori (multidimensionali) usando gli
+operatori = o == sui nomi dei vettori stessi
 
 ---
 
