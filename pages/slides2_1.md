@@ -3,7 +3,7 @@ layout: cover
 coverDate:
 ---
 
-# 2 -  Introduzione al “C” 
+# 2 - Introduzione al “C”
 
 Ing. Giancarlo Degani
 
@@ -22,6 +22,8 @@ image: /kernighan.png
 - Codice molto efficiente
 
 ---
+level: 3
+---
 
 # Il linguaggio C, caratteristiche
 
@@ -31,6 +33,8 @@ image: /kernighan.png
 - Gestione della memoria “manuale” (Non c’è garbage collector)
 
 ---
+level: 3
+---
 
 # Librerie
 
@@ -38,6 +42,8 @@ image: /kernighan.png
 - Queste operazioni elementari sono disponibili sotto forma di funzioni
 - Le funzioni sono raccolte e distribuite sotto forma di librerie
 
+---
+level: 3
 ---
 
 # Come si scrive un programma?
@@ -47,13 +53,15 @@ image: /kernighan.png
 - CLion è un IDE specifico per C/C++
 
 ---
-
+level: 3
+---
 # hello, world
 
 <<< @/examples/example01/main.c c {all|1-4|6-7|9-15|17-18|19|all}{lines:true}
 
 ---
-
+level: 3
+---
 # Creazione di un eseguibile
 
 Il processo di creazione di un eseguibile a partire dai sorgenti è composto da 2 fasi:
@@ -62,7 +70,8 @@ Il processo di creazione di un eseguibile a partire dai sorgenti è composto da 
 - **linking**: il file oggetto e le librerie vengono unite (collegate – “link”) così da aggiungere al file oggetto le parti mancanti e costituire un unico file eseguibile. La fase di link può creare un eseguibile collegando insieme più file oggetto e più librerie.
 
 ---
-
+level: 3
+---
 # Librerie
 
 - In un linguaggio ad alto livello le funzioni di base sono fornite dal linguaggio ( lettura da tastiera, scrittura su schermo, lettura/scrittura da file)
@@ -71,6 +80,7 @@ Il processo di creazione di un eseguibile a partire dai sorgenti è composto da 
 
 ---
 layout: two-cols
+level: 3
 ---
 
 # Librerie statiche
@@ -89,6 +99,7 @@ flowchart TB
 
 ---
 layout: two-cols
+level: 3
 ---
 
 # Librerie statiche
@@ -114,6 +125,7 @@ flowchart TB
 
 ---
 layout: two-cols
+level: 3
 ---
 
 # Librerie dinamiche
@@ -148,6 +160,8 @@ flowchart TB
 ```
 
 ---
+level: 3
+---
 
 # Processo di build di un programma C
 
@@ -166,6 +180,8 @@ CC-->OF@{ shape: doc, label: "Object file" }
     LN -->EF@{ shape: doc, label: "Executable file" }  
 ```
 
+---
+level: 3
 ---
 
 ## title
@@ -196,6 +212,7 @@ flowchart TD
 
 ---
 layout: two-cols-small-header
+level: 3
 ---
 
 # Code
@@ -210,6 +227,7 @@ left
 
 ---
 layout: two-cols
+level: 3
 ---
 
 # latex
@@ -223,6 +241,7 @@ sadsd
 
 ---
 layout: two-cols
+level: 3
 ---
 
 # Code
@@ -235,6 +254,8 @@ left
 
 <<< @/snippets/example_01.c c {all|5|7|all}{lines:true}
 
+---
+level: 3
 ---
 
 # Esempio for

@@ -3,7 +3,7 @@
 theme: academic 
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
-background: https://cover.sli.dev
+#background: /logo-ITS.png
 
 coverDate: "2025"
 # some information about your slides (markdown enabled)
@@ -29,29 +29,47 @@ themeConfig:
   paginationX: r
   paginationY: b
   paginationPagesDisabled: [1]
+#  <img class="absolute top-0 left-0 w-110" src="/logo-ITS.png" />
 
 ---
 
-# Elementi di programmazione
-
-# e gestione dati
+# Elementi di programmazione e gestione dati
 
 Ing. Giancarlo Degani
+
 
 ---
 
 # Indice
 
-<Toc text-sm minDepth="1" maxDepth="2" />
+<Toc text-sm minDepth="1" maxDepth="1" columns="2" mode="all"/>
 
 ---
-src: ./pages/slides1.md
+src: ./pages/slides1_1.md
 
 ---
 
 ---
-src: ./pages/slides4.md
+src: ./pages/slides1_2.md
 
 ---
+
+---
+src: ./pages/slides1_3.md
+
+---
+
+---
+src: ./pages/slides2_1.md
+
+---
+
+---
+src: ./pages/slides3_1.md
+
+---
+
+---
+src: ./pages/slides4_1.md
 
 ---

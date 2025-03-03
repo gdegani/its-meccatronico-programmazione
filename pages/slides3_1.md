@@ -1,6 +1,7 @@
 ---
 layout: cover
 coverDate: 
+
 --- 
 
 # 3 - Istruzioni condizionali e cicli
@@ -9,7 +10,7 @@ Ing. Giancarlo Degani
 
 ---
 layout: two-cols
-
+level: 3
 ---
 
 # Esempio
@@ -24,6 +25,8 @@ layout: two-cols
 </Transform>
 
 ---
+level: 3
+---
 
 # Operatori di confronto o relazionali
 
@@ -36,6 +39,8 @@ layout: two-cols
 |Greater than or equal to|a >= b|
 |Less than or equal to|a <= b|
 
+---
+level: 3
 ---
 
 # Costanti intere decimali
@@ -55,6 +60,8 @@ layout: two-cols
 123UL -> unsigned long int
 
 ---
+level: 3
+---
 
 # Costanti intere esadecimali
 
@@ -64,6 +71,8 @@ Una costante intera è considerata essere in base 16 se è preceduta da 0x oppur
 
 0x10 == 16<sub>10</sub>
 
+---
+level: 3
 ---
 
 # Costanti numeriche
@@ -81,6 +90,8 @@ const double Pi = 4.0*atan(1.0);
 </Transform>
 
 ---
+level: 3
+---
 
 # Costanti simboliche
 
@@ -89,6 +100,7 @@ const double Pi = 4.0*atan(1.0);
 - Esempi:
 
 <Transform :scale="1.5">
+
 ```c
 #define nome sequenza_di_caratteri
 
@@ -96,10 +108,13 @@ const double Pi = 4.0*atan(1.0);
 #define FALSE 0
 #define DIM 80
 #define BANNER “#################################\n”
+
 ```
 
 </Transform>
 
+---
+level: 3
 ---
 
 # Costanti simboliche
@@ -111,13 +126,18 @@ const double Pi = 4.0*atan(1.0);
 - La sequenza di caratteri può contenere spazi e termina a fine riga
 
 ---
+level: 3
+---
 
 # Riferimenti
 
 - https://man7.org/linux/man-pages/man3/printf.3.html
 - https://en.cppreference.com/w/c/language
 
-----
+---
+level: 3
+
+---
 
 # Operatori logici
 
@@ -128,6 +148,8 @@ const double Pi = 4.0*atan(1.0);
 |Logical OR|a \|\| b <br> a **or** b|
 
 ---
+level: 3
+---
 
 # Valutazione delle espressioni logiche
 
@@ -135,6 +157,8 @@ const double Pi = 4.0*atan(1.0);
 - Si possono usare le parentesi per alterare l’ordine di valutazione
 - La valutazione termina appena è possibile stabilire il risultato complessivo
 
+---
+level: 3
 ---
 
 # Altri operatori
@@ -148,7 +172,7 @@ const double Pi = 4.0*atan(1.0);
 
 ---
 layout: two-cols
-
+level: 3
 ---
 
 # Esecuzione condizionale - IF
@@ -170,6 +194,8 @@ flowchart TD
 ```
 
 ---
+level: 3
+---
 
 # Esecuzione condizionale
 
@@ -186,7 +212,7 @@ flowchart TD
 
 ---
 layout: two-cols-header
-
+level: 3
 ---
 
 # Esempi
@@ -213,7 +239,7 @@ if( condizione ) {
 
 ---
 layout: two-cols
-
+level: 3
 ---
 
 # Esempio
@@ -230,7 +256,7 @@ layout: two-cols
 
 ---
 layout: two-cols
-
+level: 3
 ---
 
 # Esecuzione condizionale - IF-ELSE
@@ -252,7 +278,8 @@ flowchart TD
 ```
 
 ---
-
+level: 3
+---
 # ESERCIZIO
 
 Scrivere un programma per la gestione elementare di un carrello della spesa.
@@ -270,12 +297,15 @@ Il programma deve calcolare il costo totale del carrello:
 Il dettaglio del carrello, l’imponibile, l’IVA, ed il totale lordo
 
 ---
+level: 3
+---
 
 # ESERCIZIO
 
 Output richiesto:
 
 <Transform :scale="2">
+
 ```
 ===== Dettaglio del Carrello =====
 Numero di oggetti: 12
@@ -287,14 +317,18 @@ IVA (22%): 475.20
 Totale lordo: 2635.20
 ==============================
 ```
+
 </Transform>
 
+---
+level: 3
 ---
 
 # SELEZIONE MULTIPLA - SWITCH
 
 <Transform :scale="2">
-```
+
+```c
 switch ( espressione ){
   case valore1:
     blocco di istruzioni;
@@ -303,11 +337,14 @@ switch ( espressione ){
     blocco di istruzioni;
   
   default:
-    Blocco di default;
+    Blocco di 'default';
 }
 ```
+
 </Transform>
 
+---
+level: 3
 ---
 
 # SELEZIONE MULTIPLA
@@ -320,6 +357,8 @@ switch ( espressione ){
 istruzioni !
 
 ---
+level: 3
+---
 
 # ITERAZIONI
 
@@ -327,14 +366,17 @@ Problema: Visualizzare i numeri interi da 0 a 100
 
 <Transform :scale="2">
 
-```
+```c
 printf(“0\n”);
 printf(“1\n”);
 printf(“2\n”);
 …
 ```
+
 </Transform>
 
+---
+level: 3
 ---
 
 # ITERAZIONI
@@ -346,7 +388,7 @@ eseguite più volte
 
 ---
 layout: two-cols
-
+level: 3
 ---
 
 # ITERAZIONI: IL CICLO FOR
@@ -377,6 +419,8 @@ flowchart TD
 ```
 
 ---
+level: 3
+---
 
 # ITERAZIONI: IL CICLO FOR
 
@@ -393,6 +437,7 @@ for ( **Inizializzazione**; **controllo**; **incremento**){
 ---
 layout: two-cols
 
+level: 3
 ---
 
 # ITERAZIONI: IL CICLO WHILE
@@ -421,6 +466,8 @@ flowchart TD
 ```
 
 ---
+level: 3
+---
 
 # ITERAZIONI: IL CICLO WHILE
 
@@ -436,6 +483,7 @@ Blocco di istruzioni
 ---
 layout: two-cols
 
+level: 3
 ---
 
 # ESEMPIO: IL CICLO WHILE
@@ -456,6 +504,7 @@ layout: two-cols
 ---
 layout: two-cols
 
+level: 3
 ---
 
 # ESEMPIO: il ciclo WHILE
@@ -475,6 +524,7 @@ Somma dei valori introdotti finché non viene immesso il valore 0
 ---
 layout: two-cols
 
+level: 3
 ---
 
 # EQUIVALENZA DI FOR E WHILE
@@ -496,6 +546,7 @@ I due esempi a fianco sono equivalenti.
 ---
 layout: two-cols
 
+level: 3
 ---
 
 # ITERAZIONI: IL CICLO DO-WHILE
@@ -523,6 +574,8 @@ flowchart TD
 ```
 
 ---
+level: 3
+---
 
 # ITERAZIONI: IL CICLO DO-WHILE
 
@@ -537,7 +590,7 @@ Blocco di istruzioni
 
 ---
 layout: two-cols
-
+level: 3
 ---
 
 # ITERAZIONI: IL CICLO DO-WHILE
@@ -555,6 +608,8 @@ Stampa i numeri da 0 a 1000
 </Transform>
 
 ---
+level: 3
+---
 
 # CODIFICA DI NUMERI REALI
 
@@ -570,6 +625,8 @@ Esempio:
 -12.34 == -0.1234 * 10<sup>2</sup> == [ segno ] 0. [mantissa] * 10<sup>[esponente]</sup>
 </Transform>
 
+---
+level: 3
 ---
 
 # CODIFICA FLOATING-POINT DEI NUMERI REALI
@@ -599,6 +656,8 @@ $$
 $$
 
 ---
+level: 3
+---
 
 # ESEMPIO
 
@@ -622,6 +681,8 @@ esadecimale:
 </Transform>
 
 ---
+level: 3
+---
 
 # TIPI DI DATI PRIMITIVI PER NUMERI IN VIRGOLA MOBILE
 
@@ -631,6 +692,8 @@ esadecimale:
 |**double**|Real floating-point type, usually referred to as a double-precision floating-point type|%lf<br>%le|
 |**long&nbsp;double**|Real floating-point type, usually mapped to an extended precision floating-point number format|%Lf<br>%Le|
 
+---
+level: 3
 ---
 
 # ESERCIZIO
@@ -648,7 +711,7 @@ Consegnare: il flowchart, il codice, lo screenshot dell'output
 
 ---
 layout: two-cols
-
+level: 3
 ---
 
 # ITERAZIONI: IL CICLO FOR ANNIDATO
@@ -666,6 +729,8 @@ layout: two-cols
 </Transform>
 
 ---
+level: 3
+---
 
 # formula di newton
 
@@ -677,6 +742,8 @@ x_{i=0} & =A
 \right.
 
 $$
+---
+level: 3
 ---
 
 
