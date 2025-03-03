@@ -81,7 +81,7 @@ int main() {
     }
 
     // Stampa del risultato
-    printf("La radice quadrata approssimata di %.7f è: %.7f\n", n, (a + b) / 2.0);
+    printf("La radice quadrata approssimata di %.1f è: %.7f\n", n, (a + b) / 2.0);
 
     return 0; // Terminazione del programma
 }
