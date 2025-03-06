@@ -11,7 +11,7 @@ Ing. Giancarlo Degani
 
 # Soluzione es. carrello
 
-<<< @/examples/example04/main.c c {*}{lines:true,maxHeight:'400px'}
+<<< @/snippets/example04/main.c#sample c {*}{lines:true,maxHeight:'400px'}
 
 ---
 title: output carrello
@@ -37,12 +37,13 @@ Totale lordo: 13176.00
 
 # Soluzione es. radice
 
-<<< @/examples/example05/main.c c {*}{lines:true,maxHeight:'400px'}
+<<< @/snippets/example05/main.c#snippet c {*}{lines:true,maxHeight:'400px'}
 
 ---
 title: output radice
 ---
-```
+
+```bat
 Inserisci un numero maggiore di 1: 5
 Punto medio: 3.0000000
 Punto medio: 2.0000000
@@ -66,25 +67,45 @@ La radice quadrata approssimata di 5.0 è: 2.2360680
 
 ---
 
-# Vettori 
+# Vettori
 
 - Variabile Scalare: contiene 1 singolo valore:  
 
 ```c
 tipo identificatore = valore;
+int numero = 3 ;
 ```
 
 - Variabili vettoriali: contengono più valori dello stesso tipo: 
 
 ```c
 tipo identificatore [ dimensione ] = valore ; 
+int numeri[ 3 ] = { 0, 1, 2 };
 ```
 
 - **dimensione** deve essere una costante intera, positiva, e nota al momento della compilazione
 - Contengono elementi dello stesso tipo scalare ( int, double, char,… )
 - L'indici e di tipo intero e non negativo
 - Il primo elemento ha indice 0 (posizione) 
-- L’ultimo elemento ha indice N-1 ( N è la dimensione del vettore ) 
+- L’ultimo elemento ha indice N-1 ( N è la dimensione del vettore )
+
+---
+
+# Vettori
+
+- Gli elementi del vettore sono allocati in locazioni di memoria 
+contigue e successive
+- Si accede ai singoli elementi indicando il nome del vettore seguito dall'indice fra parentesi quadre
+- Poiché ciascun elemento del vettore è del tipo indicato nella definizione, può essere utilizzato in tutti i contesti in cui si può usare una variabile di quel tipo
+
+<Transform :scale="1.3" >
+```c
+int vett[10];
+scanf("%d", &vett[4]);
+x = vett[4] * 5;
+```
+
+</Transform>
 
 ---
 layout: two-cols
@@ -131,27 +152,6 @@ block-beta
 ```
 
 ---
-
-# Vettori
-
-- Gli elementi del vettore sono allocati in locazioni di memoria 
-contigue e successive
-- Si accede ai singoli elementi indicando il nome del vettore seguito dall'indice fra parentesi quadre
-
----
-
-# Vettori
-
-- Poiché ciascun elemento del vettore è del tipo indicato nella definizione, può essere utilizzato in tutti i contesti in cui si può usare una variabile di quel tipo
-
-```c
-int vett[10];
-scanf("%d", &vett[4]);
-x = vett[4] * 5;
-
-```
-
----
 layout: two-cols
 
 ---
@@ -165,6 +165,7 @@ layout: two-cols
 ::right::
 <br>
 <br>
+<Transform :scale="1.3" >
 
 ```c
 #define N 10
@@ -177,18 +178,21 @@ for (i=N-1; i>=0; i--){
 }
 
 ```
+</Transform>
 
 ---
 
 # Esercizi
 
-- Scrivere un programma che chieda quanti valori verranno introdotti dalla tastiera (max 100), li chieda tutti e successivamente visualizzi prima tutti i valori pari nell’ordine in cui sono stati inseriti e poi tutti i valori dispari nell’ordine inverso.
+- Scrivere un programma che chieda quanti valori verranno introdotti dalla tastiera (max 100), li chieda tutti e successivamente visualizzi prima tutti i valori pari nell’ordine in cui sono stati inseriti e poi tutti i valori dispari nell’ordine inverso. *(see example07)*
 - Scrivere un programma che, dati in input N numeri reali, con N che al massimo vale 100, stampi quanti di essi sono maggiori della media e successivamente li stampi a video
 
 ---
 layout: figure-side
 
-figureUrl: https://upload.wikimedia.org/wikipedia/commons/b/b9/Sieve_of_Eratosthenes_animation.gif
+figureUrl: "/public/Sieve_of_Eratosthenes_animation.gif"
+
+figureCaption: "source: wikipedia.org"
 
 ---
 
@@ -204,13 +208,14 @@ Il crivello di [Eratostene](https://it.wikipedia.org/wiki/Crivello_di_Eratostene
 
 # Esercizio
 
-Scrivere un programma che richieda un numero n positivo e, usando il crivello di Eratostene, trovi e stampi i numeri primi minori o uguali a n.
+Scrivere un programma che richieda un numero n positivo e, usando il crivello di Eratostene, trovi e stampi i numeri primi minori o uguali a n *(see example08)*.
+
 
 ---
 
 # Soluzione crivello di Eratostene
 
-<<< @/examples/example08/main.c c {*}{lines:true,maxHeight:'400px'}
+<<< @/snippets/example08/main.c c {*}{lines:true,maxHeight:'400px'}
 
 
 ---
@@ -243,6 +248,7 @@ int matrice [ 5 ][ 10 ];
 
 Come per i vettori, il ciclo **for** si presta per attraversare righe e colonne:
 
+<Transform :scale="1.3">
 ```c
 int matrice[RIGHE][COLONNE];
 for (r=0; r<RIGHE; r++)
@@ -252,6 +258,7 @@ for (r=0; r<RIGHE; r++)
     printf("\n");
 }
 ```
+</Transform>
 
 ---
 layout: two-cols
@@ -264,12 +271,16 @@ layout: two-cols
 - La matrice m\[10\]\[20\] è memorizzata come 20 vettori consecutivi di 10 elementi
 - Un vettore o una matrice possono essere inizializzati elencando i valori delle singole celle della matrice o del vettore
 
+
+::right::
+
+<br>
+<Transform :scale="1.3">
+
 ```c
 int matrice [2][3] = {1,2,3,4,5,6};
 ```
-
-::right::
-<br>
+</Transform>
 <br>
 
 ||**0**|**1**|**2**|
@@ -291,6 +302,87 @@ int matrice [DIM_1][DIM_2]...[DIM_N] ;
 - Non è possibile copiare o confrontare due
 generici vettori (multidimensionali) usando gli
 operatori = o == sui nomi dei vettori stessi
+
+---
+
+# Caratteri
+
+- Per memorizzare i simboli grafici corrispondenti ai caratteri bisogna associare
+un numero intero a ciascuno di essi
+- Lo standard ASCII definisce una codifica a 7 o 8 bit
+- I caratteri ASCII sono gestiti in C con variabili di tipo **char**. ovvero numeri interi ad 8 bit
+- Esempio:
+<Transform :scale="2">
+
+```c
+char c =  ‘a’;
+
+char character;
+char character = 'A'; // assegnazione con caratter
+char character = 65;  // assegnazione con codice ASCI decimale
+```
+
+</Transform>
+
+---
+
+# Caratteri
+
+- Caratteri “speciali” sono rappresentati con le sequenze di escape, ovvero premettendo il carattere '\\':
+  - \’  
+  - \”
+  - \\?
+  - \\\\
+
+- Alcuni caratteri di controllo
+  - \\n - nuova linea
+  - \\r - ritorno a capo
+  - \\t - tabulazione
+
+---
+
+# Stringhe
+
+- Sono vettori di **char**  terminate dal carattere **null**
+- Null è un carattere speciale rappresentato con **\\0** (Ottale) o **Ox00** (Esadecimale)
+- Attenzione:
+
+|Simbolo|Decimale|Ottale|Esadecimale|
+|---|---|---|---|
+|Null|0|\0|0x00|
+|'0' (zero)|48|\60|0x30|
+
+---
+
+# Stringhe
+
+- Poiché le stringhe sono terminate da null, una stringa di n caratteri, richiede n+1 byte di memoria.
+
+Esempio:
+
+|||||||||
+|---|---|---|---|---|---|---|---|
+|**Char**|H|e|l|l|o|!|**\0**|
+|**Dec**|72|101|108|108|111|33|**0**|
+|**Hex**|48|65|	6C|	6C|	6F|	21|**0**|
+
+---
+
+# Stringhe
+
+## Costanti
+
+Le Stringhe costanti sono sequenze di char racchiuse da doppi apici
+Esempi:
+
+- "Ciao"
+- "Hello World!"
+
+## Variabili
+
+- Sono vettori di char di dimensione fissa (nota al compile-time), l’ultimo c
+
+---
 
 ---
 

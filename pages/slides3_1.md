@@ -21,7 +21,7 @@ level: 3
 
 ::right::
 <Transform :scale="1.2">
-<<< @/examples/example03/main.c c {all}{lines:true}
+<<< @/snippets/example03/main.c c {all}{lines:true}
 </Transform>
 
 ---
@@ -252,7 +252,7 @@ level: 3
 <br>
 <br>
 
-<<< @/examples/example04/main.c#blocco_if c {*}{lines:true}
+<<< @/snippets/example04/main.c#blocco_if c {*}{lines:true}
 
 ---
 layout: two-cols
@@ -497,7 +497,7 @@ level: 3
 <br>
 <Transform :scale="2">
 
-<<< @/examples/example03/ciclo_while.c#ciclo c {*}{lines:true}
+<<< @/snippets/example03/ciclo_while.c#ciclo c {*}{lines:true}
 
 </Transform>
 
@@ -517,7 +517,7 @@ Somma dei valori introdotti finché non viene immesso il valore 0
 <br>
 <Transform :scale="2">
 
-<<< @/examples/example03/ciclo_while2.c#ciclo c {*}{lines:true}
+<<< @/snippets/example03/ciclo_while2.c#ciclo c {*}{lines:true}
 
 </Transform>
 
@@ -539,7 +539,7 @@ I due esempi a fianco sono equivalenti.
 <br>
 <Transform :scale="2">
 
-<<< @/examples/example03/ciclo_for_while.c#ciclo c {*}{lines:true}
+<<< @/snippets/example03/ciclo_for_while.c#ciclo c {*}{lines:true}
 
 </Transform>
 
@@ -603,7 +603,7 @@ Stampa i numeri da 0 a 1000
 <br>
 <Transform :scale="2">
 
-<<< @/examples/example03/ciclo_do_while.c#ciclo c {*}{lines:true}
+<<< @/snippets/example03/ciclo_do_while.c#ciclo c {*}{lines:true}
 
 </Transform>
 
@@ -724,7 +724,7 @@ level: 3
 <br>
 <Transform :scale="1.4">
 
-<<< @/examples/example03/ciclo_nested.c#ciclo c {*}{lines:true}
+<<< @/snippets/example03/ciclo_nested.c#ciclo c {*}{lines:true}
 
 </Transform>
 

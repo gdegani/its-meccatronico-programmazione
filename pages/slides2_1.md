@@ -57,7 +57,7 @@ level: 3
 ---
 # hello, world
 
-<<< @/examples/example01/main.c c {all|1-4|6-7|9-15|17-18|19|all}{lines:true}
+<<< @/snippets/example01/main.c c {all|1-4|6-7|9-15|17-18|19|all}{lines:true}
 
 ---
 level: 3

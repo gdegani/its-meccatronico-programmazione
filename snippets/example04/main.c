@@ -21,7 +21,7 @@ int main() {
     float sconto = 0;          // Sconto applicato (se applicabile)
     float iva;                 // IVA calcolata sul totale
     float totale;              // Totale finale, comprensivo di IVA
-
+    // #region sample
     // Richiesta dati all'utente
     printf("Inserisci il numero di oggetti nel carrello: ");
     scanf("%d", &numero_oggetti);
@@ -44,7 +44,7 @@ int main() {
 
     // Calcolo del totale lordo (imponibile + IVA)
     totale = imponibile + iva;
-
+    // #endregion
     // Stampa del dettaglio del carrello
     printf("\n===== Dettaglio del Carrello =====\n");
     printf("Numero di oggetti: %d\n", numero_oggetti);

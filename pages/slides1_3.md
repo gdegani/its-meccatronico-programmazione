@@ -250,7 +250,7 @@ Stampa la scritta “hello world” in linguaggio assembly per microprocessore I
 
 ::right::
 
-<<< @/examples/example00/HelloWorld.asm asm {all}{lines:true}
+<<< @/snippets/example00/HelloWorld.asm asm {all}{lines:true}
 
 ---
 layout: two-cols
@@ -263,7 +263,7 @@ Stampa la scritta “hello world”.
 
 ::right::
 
-<<< @/examples/example01/main.c c {all}{lines:true}
+<<< @/snippets/example01/main.c c {all}{lines:true}
 
 ---
 layout: two-cols
@@ -276,4 +276,4 @@ Stampa la scritta “hello world” in Python.
 
 ::right::
 
-<<< @/examples/example00/hello.py py {all}{lines:true}
+<<< @/snippets/example00/hello.py py {all}{lines:true}

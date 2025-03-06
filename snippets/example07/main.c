@@ -1,3 +1,8 @@
+/*
+ * This program reads up to 100 real numbers from the user, calculates the average,
+ * counts how many numbers are above the average, and prints those numbers along with the count.
+ */
+
 #include <stdio.h>
 
 #define MAX_NUMBERS 100
@@ -12,6 +17,7 @@ int main(void) {
     printf("Enter the number of elements (max 100): ");
     scanf("%d", &N);
 
+    // Check if the number of elements exceeds the maximum limit
     if (N > MAX_NUMBERS) {
         printf("Number of elements exceeds the maximum limit of 100.\n");
         return 1;
@@ -21,7 +27,7 @@ int main(void) {
     printf("Enter %d numbers:\n", N);
     for (int i = 0; i < N; i++) {
         scanf("%lf", &numbers[i]);
-        sum += numbers[i];
+        sum += numbers[i];  // Calculate the sum of the numbers
     }
 
     // Calculate the average

@@ -56,20 +56,18 @@ int main() {
     printf("%d\n", sizeof(double));
     printf("%d\n", sizeof(long double));
 
+    // #region snippet
     // Input dell'utente
     printf("Inserisci un numero maggiore di 1: ");
     scanf("%lf", &n);
-
     // Controllo se il numero è valido
     if (n <= 1) {
         printf("Errore: il numero deve essere maggiore di 1.\n");
         return 1; // Termina il programma con errore
     }
-
     // Inizializzazione dei limiti per il metodo di bisezione
     a = 1.0;
     b = n;
-
     // Iterazione dell'algoritmo di bisezione
     while ((b - a) > EPSILON) {
         x = (a + b) / 2.0;  // Calcolo del punto medio
@@ -79,9 +77,8 @@ int main() {
         else
             a = x;  // Altrimenti aggiorna il limite inferiore
     }
-
     // Stampa del risultato
     printf("La radice quadrata approssimata di %.1f è: %.7f\n", n, (a + b) / 2.0);
-
+    // #endregion
     return 0; // Terminazione del programma
 }
