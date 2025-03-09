@@ -45,9 +45,15 @@ Ing. Giancarlo Degani
 <Toc text-sm minDepth="1" maxDepth="1" columns="2" mode="all"/>
 
 ---
+hide: true
+
+---
 src: ./pages/slides1_1.md
 
 ---
+
+---
+hide: true
 
 ---
 src: ./pages/slides1_2.md
@@ -55,14 +61,23 @@ src: ./pages/slides1_2.md
 ---
 
 ---
+hide: true
+
+---
 src: ./pages/slides1_3.md
 
 ---
 
 ---
+hide: true
+
+---
 src: ./pages/slides2_1.md
 
 ---
+
+---
+hide: true
 
 ---
 src: ./pages/slides3_1.md

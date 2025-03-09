@@ -190,7 +190,7 @@ for (i=N-1; i>=0; i--){
 ---
 layout: figure-side
 
-figureUrl: "/public/Sieve_of_Eratosthenes_animation.gif"
+figureUrl: "/Sieve_of_Eratosthenes_animation.gif"
 
 figureCaption: "source: wikipedia.org"
 
@@ -312,14 +312,14 @@ un numero intero a ciascuno di essi
 - Lo standard ASCII definisce una codifica a 7 o 8 bit
 - I caratteri ASCII sono gestiti in C con variabili di tipo **char**. ovvero numeri interi ad 8 bit
 - Esempio:
-<Transform :scale="2">
+<Transform :scale="1.5">
 
 ```c
-char c =  ‘a’;
 
 char character;
 char character = 'A'; // assegnazione con caratter
 char character = 65;  // assegnazione con codice ASCI decimale
+char character = 0x41;  // assegnazione con codice ASCI esadecimale
 ```
 
 </Transform>
@@ -347,10 +347,10 @@ char character = 65;  // assegnazione con codice ASCI decimale
 - Null è un carattere speciale rappresentato con **\\0** (Ottale) o **Ox00** (Esadecimale)
 - Attenzione:
 
-|Simbolo|Decimale|Ottale|Esadecimale|
-|---|---|---|---|
-|Null|0|\0|0x00|
-|'0' (zero)|48|\60|0x30|
+|Simbolo|Decimale|Esadecimale|
+|---|---|---|
+|Null|0|0x00|
+|'0' (zero)|48|0x30|
 
 ---
 
@@ -364,7 +364,7 @@ Esempio:
 |---|---|---|---|---|---|---|---|
 |**Char**|H|e|l|l|o|!|**\0**|
 |**Dec**|72|101|108|108|111|33|**0**|
-|**Hex**|48|65|	6C|	6C|	6F|	21|**0**|
+|**Hex**|48|65|6C|6C|6F|21|**0**|
 
 ---
 
@@ -372,17 +372,89 @@ Esempio:
 
 ## Costanti
 
-Le Stringhe costanti sono sequenze di char racchiuse da doppi apici
+Le stringhe costanti (string literal) sono sequenze di char racchiuse da doppi apici
 Esempi:
 
 - "Ciao"
 - "Hello World!"
 
+<br>
+
 ## Variabili
 
-- Sono vettori di char di dimensione fissa (nota al compile-time), l’ultimo c
+- Le stringhe variabili sono vettori di char di dimensione nota al momento della compilazione.
+- il vettore deve contenere anche il terminatore null.
+
 
 ---
+
+# Stringhe variabili
+
+- Inizializzazione
+
+<Transform :scale="1.4">
+```c
+#define MAX_LENGHT 100
+char str[100] = “Hello”;
+char str[MAX_LENGHT+1] = {‘H’,’e’,’l’,’l’,’o’} ;
+```
+</Transform>
+<br>
+
+- La dimensione massima viene solitamente gestita con #define
+- La lunghezza della stringa è data dal numero di caratteri fino al null escluso
+- La stringa è un vettore, posso quindi usare la notazione dei vettori per accedere ai singoli caratteri
+  - str[0] è il primo carattere
+  - str[1] è il secondo carattere
+
+---
+
+# Stringhe variabili
+
+- Attenzione agli apici:
+  - 'a' è un carattere che occupa 1 byte
+  - "a" è una stringa di 2 char, il caratter 'a' ed il terminatore \0
+- Come per i vettori, il nome della stringa rappresenta per il compilatore una variabile contenente l'indirizzo di memoria del primo carattere della stringa.
+- Una stringa non può essere copiata con l'operatore '=', devo usare delle funzioni apposite.
+
+
+---
+
+# I/O di stringhe
+
+## puts(nome_stringa)
+
+Visualizza *nome_stringa* e aggiunge un '\n' alla fine. 
+
+## gets(nome_stringa)
+
+Legge da tastiera tutta la stringa in input fino al ritorno a capo incluso , la mette in *nome_stringa* senza il '\n' ed aggiunge '\0' alla fine.
+
+## printf("%s", nome_stringa)
+
+%s visualizza la stringa *nome_stringa* fino al '\0'
+
+---
+layout: figure
+
+figureCaption: "source: cpprefence.com"
+
+figureUrl: /string_ctype.png
+
+---
+
+# Stringhe - ctype.h
+
+---
+layout: figure
+
+figureCaption: "source: cpprefence.com"
+
+figureUrl: /string_string1.png
+
+---
+
+# Stringhe - string.h
 
 ---
 
@@ -410,3 +482,19 @@ sequenceDiagram
     stdio -->> main: return
     deactivate stdio
 ```
+
+---
+
+# Esercizi stringhe
+
+<Transform :scale='0.7' >
+<<< @/snippets/example09/main.c c {*}{lines:true}
+</Transform>
+
+---
+
+# Esercizi stringhe
+
+<Transform :scale='0.5' >
+<<< @/snippets/example10/main.c c {*}{lines:true}
+</Transform>
