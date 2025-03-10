@@ -498,3 +498,107 @@ sequenceDiagram
 <Transform :scale='0.5' >
 <<< @/snippets/example10/main.c c {*}{lines:true}
 </Transform>
+
+---
+
+# Esempio 11
+
+<Transform :scale='0.9' >
+<<< @/snippets/example11/main.c c {*}{lines:true}
+</Transform>
+---
+
+# Esempio 12
+
+<Transform :scale='0.4' >
+<<< @/snippets/example12/main.c c {*}{lines:true}
+</Transform>
+
+---
+
+# funzione 
+
+```c
+
+float areaTriangolo( float base, float altezza) {
+  float risultato = base * altezza / 2 ;
+  return risultato ;
+}
+
+
+```
+---
+
+# Esempio 14
+
+<Transform :scale='0.4' >
+<<< @/snippets/example14/utility.h c {*}{lines:true}
+</Transform>
+
+<Transform :scale='0.4' >
+<<< @/snippets/example14/utility.c c {*}{lines:true}
+</Transform>
+---
+
+# Esempio 14
+
+<Transform :scale='0.4' >
+<<< @/snippets/example14/main.c c {*}{lines:true}
+</Transform>
+
+---
+
+# struct
+
+```c 
+struct coordinate {
+  float x;
+  float y;
+  float z;
+};
+
+    struct coordinate punto1, punto2, *punto3;
+    struct coordinate punto4 = {1.0, 2.2, 3.4};
+
+    punto2.x = punto4.x;
+    punto2.y = punto4.y;
+
+    (*punto3).x = punto4.x;
+    punto3->x = punto4.x;
+
+```
+
+```mermaid {scale: 0.9}
+classDiagram
+    class coordinate {
+        float x
+        float y
+        float z
+    }
+```
+
+---
+
+# typedef
+
+```c
+   typedef struct record {
+        char nome[20];
+        char cognome[20];
+        int eta;
+    } record_utente;
+
+    record_utente utente1, utente2;
+
+    utente1.eta = 20;
+    strcpy(utente1.nome, "Mario");
+
+```
+
+---
+
+# Esempio 15
+
+<Transform :scale='0.4' >
+<<< @/snippets/example15/main.c c {*}{lines:true}
+</Transform>

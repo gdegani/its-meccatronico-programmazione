@@ -5,7 +5,11 @@
 #define MAX_PERSONE 100
 #define MAX_NOME 50
 
+enum test1 {UNO, DUE, TRE};
+enum test2 {UNO, QUATTRO, CINQUE, SEI};
 int main(void) {
+
+
     int numero_persone, numero_gruppi;
 
     // Richiedi il numero di persone
