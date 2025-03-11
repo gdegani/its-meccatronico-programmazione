@@ -5,4 +5,6 @@ set(CMAKE_C_STANDARD 11)
 
 add_executable(example14 main.c
         utility.c
-        utility.h)
+        utility.h
+        test.c
+        test.h)
