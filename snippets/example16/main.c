@@ -46,7 +46,7 @@ void resetBoard() {
         }
     }
 }
-
+FILE *fptr;
 // Function to handle a player's turn
 void playYourTurn(int turn) {
     int row, col;

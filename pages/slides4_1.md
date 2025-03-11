@@ -602,3 +602,54 @@ classDiagram
 <Transform :scale='0.4' >
 <<< @/snippets/example15/main.c c {*}{lines:true}
 </Transform>
+
+---
+
+# struct
+
+```c {*}{lines:true}
+   typedef struct record {
+        char nome[20];
+        char cognome[20];
+        int eta;
+    } record_utente ;
+
+record_utente utenti[10] ={ {"bilbo", "baggins", 100 }};
+
+
+
+struct record {
+        char nome[20];
+        char cognome[20];
+        int eta;
+} utente1, utente2;
+
+if ( utente1.eta == utente2.eta 
+      && strcmp(utente1.nome, utente2.nome) == 0
+      && strcmp(utente1.cognome, utente2.cognome) == 0 ) {
+        // code block
+        
+}
+
+```
+---
+
+# file
+
+```c {*}{lines:true}
+
+// stdio.h
+typedef	struct __sFILE {
+ ...	
+} FILE;
+
+FILE *my_file; 
+
+```
+---
+
+# Esempio file
+
+<Transform :scale='0.4' >
+<<< @/snippets/example18/main.c c {*}{lines:true}
+</Transform>
