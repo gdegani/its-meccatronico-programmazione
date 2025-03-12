@@ -653,3 +653,12 @@ FILE *my_file;
 <Transform :scale='0.4' >
 <<< @/snippets/example18/main.c c {*}{lines:true}
 </Transform>
+
+
+--- 
+
+# struct & func
+
+<Transform :scale='0.9' >
+<<< @/snippets/example19/main.c c {*}{lines:true}
+</Transform>
