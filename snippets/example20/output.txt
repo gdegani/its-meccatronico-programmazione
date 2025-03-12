@@ -1,0 +1,5 @@
+Student Records:
+ID         Name                 Grade
+----------------------------------------
+4          Merry                30   
+1          Bilbo                19   

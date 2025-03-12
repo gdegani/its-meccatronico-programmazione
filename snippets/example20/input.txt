@@ -1,3 +1,4 @@
-1;Bilbo;6;
+1;Bilbo;19;
 2;Frodo;7;
 3;Sam;10;
+4;Merry;30;

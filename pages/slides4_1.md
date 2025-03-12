@@ -654,11 +654,29 @@ FILE *my_file;
 <<< @/snippets/example18/main.c c {*}{lines:true}
 </Transform>
 
-
---- 
+---
 
 # struct & func
 
 <Transform :scale='0.9' >
 <<< @/snippets/example19/main.c c {*}{lines:true}
+</Transform>
+
+---
+
+# files
+
+<Transform :scale='0.9' >
+<<< @/snippets/example20/input.txt csv {*}{lines:true}
+</Transform>
+<Transform :scale='0.9' >
+<<< @/snippets/example20/output.txt csv {*}{lines:true}
+</Transform>
+
+---
+
+# files
+
+<Transform :scale='0.5' >
+<<< @/snippets/example20/main.c c {*}{lines:true}
 </Transform>

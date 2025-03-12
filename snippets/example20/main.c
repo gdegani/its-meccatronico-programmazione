@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define MAXLENGTH 1000
+#define MAXLENGTH 100
 #define MAXLINES 1000
 #define DELIMITER ";"
 
@@ -16,11 +16,11 @@ struct Record {
 // Function to parse a line of input and populate a Record structure
 void parseLine(char *line, struct Record *currentRecord) {
     int counter = 0;
-    const char *tok;
-    tok = strtok(line, DELIMITER);
+    char *tok;
+    char *rest = line;
 
     // Loop through the tokens in the line
-    while (tok != NULL && counter < 3) {
+    while ((tok = strsep(&rest, DELIMITER)) != NULL && counter < 3) {
         switch (counter) {
             case 0:
                 currentRecord->id = atoi(tok); // Convert the first token to an integer for id
@@ -34,13 +34,19 @@ void parseLine(char *line, struct Record *currentRecord) {
             default:
                 break;
         }
-        tok = strtok(NULL, DELIMITER); // Get the next token
         counter++;
     }
 }
 
+// Function to compare records based on grade in descending order
+int compareRecords(const void *a, const void *b) {
+    struct Record *recordA = (struct Record *)a;
+    struct Record *recordB = (struct Record *)b;
+    return recordB->grade - recordA->grade;
+}
+
 int main(int argc, char *argv[]) {
-    FILE *inputFile;
+    FILE *inputFile, *outputFile;
     char line[MAXLENGTH];
     struct Record records[MAXLINES];
     int counter = 0;
@@ -61,13 +67,39 @@ int main(int argc, char *argv[]) {
     // Close the input file
     fclose(inputFile);
 
-    // Print the records in a formatted manner
+    // Filter records with grade >= 18
+    struct Record filteredRecords[MAXLINES];
+    int filteredCounter = 0;
+    for (int i = 0; i < counter; i++) {
+        if (records[i].grade >= 18) {
+            filteredRecords[filteredCounter++] = records[i];
+        }
+    }
+
+    // Sort the filtered records in descending order based on grade
+    qsort(filteredRecords, filteredCounter, sizeof(struct Record), compareRecords);
+
+    // Open the output file for writing
+    outputFile = fopen("output.txt", "w");
+    if (outputFile == NULL) {
+        perror("Error opening output file");
+        return EXIT_FAILURE;
+    }
+
+    // Print and write the filtered and sorted records
     printf("Student Records:\n");
     printf("%-10s %-20s %-5s\n", "ID", "Name", "Grade");
     printf("----------------------------------------\n");
-    for (int j = 0; j < counter; j++) {
-        printf("%-10d %-20s %-5d\n", records[j].id, records[j].name, records[j].grade);
+    fprintf(outputFile, "Student Records:\n");
+    fprintf(outputFile, "%-10s %-20s %-5s\n", "ID", "Name", "Grade");
+    fprintf(outputFile, "----------------------------------------\n");
+    for (int j = 0; j < filteredCounter; j++) {
+        printf("%-10d %-20s %-5d\n", filteredRecords[j].id, filteredRecords[j].name, filteredRecords[j].grade);
+        fprintf(outputFile, "%-10d %-20s %-5d\n", filteredRecords[j].id, filteredRecords[j].name, filteredRecords[j].grade);
     }
+
+    // Close the output file
+    fclose(outputFile);
 
     return 0;
 }
