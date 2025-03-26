@@ -27,7 +27,7 @@ int main(void) {
 
     // Close the file
     fclose(file);
-
+    printf("%d", 5%2);
     // Return success
     return EXIT_SUCCESS;
 }
