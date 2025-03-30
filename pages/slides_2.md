@@ -1,6 +1,6 @@
 ---
-layout: cover
 coverDate:
+
 ---
 
 # 2 - Introduzione al “C”
@@ -23,6 +23,7 @@ image: /kernighan.png
 
 ---
 level: 3
+
 ---
 
 # Il linguaggio C, caratteristiche
@@ -34,6 +35,7 @@ level: 3
 
 ---
 level: 3
+
 ---
 
 # Librerie
@@ -44,6 +46,7 @@ level: 3
 
 ---
 level: 3
+
 ---
 
 # Come si scrive un programma?
@@ -54,14 +57,49 @@ level: 3
 
 ---
 level: 3
+
 ---
+
+# hello, world
+
+<<< @/snippets/example01/main.c txt {all}{lines:true}
+
+---
+level: 3
+
+---
+
 # hello, world
 
 <<< @/snippets/example01/main.c c {all|1-4|6-7|9-15|17-18|19|all}{lines:true}
 
 ---
 level: 3
+
 ---
+
+# Processo di build di un programma C
+
+```mermaid {scale: 0.9, alt: 'A diagram'}
+flowchart LR
+SF@{ shape: doc, label: "Source file" }
+HF@{ shape: docs, label: "Header files" }
+SF-->PP[Preprocessor]
+HF-->PP
+PP-->PF@{ shape: doc, label: "Pre-processed file" }
+PF-->CC[Compiler]
+CC-->OF@{ shape: doc, label: "Object file" }
+
+    OFF@{ shape: docs, label: "Object files" }-->LN[Linker]
+    LL@{ shape: docs, label: "Libraries" }--> LN
+    LN -->EF@{ shape: doc, label: "Executable file" }  
+```
+
+---
+level: 3
+
+---
+
 # Creazione di un eseguibile
 
 Il processo di creazione di un eseguibile a partire dai sorgenti è composto da 2 fasi:
@@ -159,26 +197,6 @@ flowchart TB
     a3<-.->a5
 ```
 
----
-level: 3
----
-
-# Processo di build di un programma C
-
-```mermaid {scale: 0.9, alt: 'A diagram'}
-flowchart LR
-SF@{ shape: doc, label: "Source file" }
-HF@{ shape: docs, label: "Header files" }
-SF-->PP[Preprocessor]
-HF-->PP
-PP-->PF@{ shape: doc, label: "Pre-processed file" }
-PF-->CC[Compiler]
-CC-->OF@{ shape: doc, label: "Object file" }
-
-    OFF@{ shape: docs, label: "Object files" }-->LN[Linker]
-    LL@{ shape: docs, label: "Libraries" }--> LN
-    LN -->EF@{ shape: doc, label: "Executable file" }  
-```
 
 ---
 level: 3

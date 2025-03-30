@@ -37,7 +37,6 @@ themeConfig:
 
 Ing. Giancarlo Degani
 
-
 ---
 
 # Indice
@@ -50,10 +49,7 @@ src: ./pages/slides_1.md
 ---
 
 ---
-hide: true
-
----
-src: ./pages/slides1_2.md
+src: ./pages/slides_2.md
 
 ---
 
@@ -83,5 +79,10 @@ src: ./pages/slides3_1.md
 
 ---
 src: ./pages/slides4_1.md
+
+---
+
+---
+src: ./pages/slides_7.md
 
 ---
