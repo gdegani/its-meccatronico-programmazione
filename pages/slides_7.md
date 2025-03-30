@@ -278,3 +278,43 @@ layout: two-cols
 
 <<< @/snippets/example24/demo.h#snippet1 c {*}{lines:true}
 </Transform>
+
+---
+
+# Esempio di menù
+
+```txt
+
+Operazioni possibili:
+a. AddToHead
+b. AddToTail
+c. RemoveFromHead
+d. RemoveFromTail
+e. ClearAll
+p. PrintAll
+x. Exit
+
+Scelta: 
+
+```
+
+---
+
+# Esempio di output
+
+```txt
+
+0) address: [0x6000039dc000], value: [22222], next: [0x6000039c4000]
+1) address: [0x6000039c4000], value: [11111], next: [0x0]
+Operazioni possibili:
+a. AddToHead
+b. AddToTail
+c. RemoveFromHead
+d. RemoveFromTail
+e. ClearAll
+p. PrintAll
+x. Exit
+
+Scelta: 
+
+```
