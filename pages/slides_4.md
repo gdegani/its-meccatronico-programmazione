@@ -1,11 +1,16 @@
 ---
 layout: cover
+
 coverDate:
+
 ---
 
 # 4 - Vettori e matrici
 
 Ing. Giancarlo Degani
+
+---
+level: 3
 
 ---
 
@@ -16,9 +21,11 @@ Ing. Giancarlo Degani
 ---
 title: output carrello
 
+level: 3
+
 ---
 
-```
+```txt
 Inserisci il numero di oggetti nel carrello: 12
 Inserisci il prezzo unitario degli oggetti: 1000
 
@@ -33,6 +40,10 @@ Totale lordo: 13176.00
 ==============================
 
 ```
+
+---
+level: 3
+
 ---
 
 # Soluzione es. radice
@@ -41,9 +52,12 @@ Totale lordo: 13176.00
 
 ---
 title: output radice
+
+level: 3
+
 ---
 
-```bat
+```txt
 Inserisci un numero maggiore di 1: 5
 Punto medio: 3.0000000
 Punto medio: 2.0000000
@@ -64,6 +78,9 @@ Punto medio: 2.2360679
 Punto medio: 2.2360680
 La radice quadrata approssimata di 5.0 è: 2.2360680
 ```
+
+---
+level: 3
 
 ---
 
@@ -90,6 +107,9 @@ int numeri[ 3 ] = { 0, 1, 2 };
 - L’ultimo elemento ha indice N-1 ( N è la dimensione del vettore )
 
 ---
+level: 3
+
+---
 
 # Vettori
 
@@ -109,6 +129,8 @@ x = vett[4] * 5;
 
 ---
 layout: two-cols
+
+level: 3
 
 ---
 
@@ -154,6 +176,8 @@ block-beta
 ---
 layout: two-cols
 
+level: 3
+
 ---
 
 # Vettori
@@ -178,7 +202,11 @@ for (i=N-1; i>=0; i--){
 }
 
 ```
+
 </Transform>
+
+---
+level: 3
 
 ---
 
@@ -194,6 +222,8 @@ figureUrl: "/Sieve_of_Eratosthenes_animation.gif"
 
 figureCaption: "source: wikipedia.org"
 
+level: 3
+
 ---
 
 # Il crivello di Eratostene
@@ -205,11 +235,16 @@ Il crivello di [Eratostene](https://it.wikipedia.org/wiki/Crivello_di_Eratostene
 - si passa al successivo numero non cancellato e si ripete l'operazione con i numeri che seguono
 
 ---
+level: 3
+
+---
 
 # Esercizio
 
 Scrivere un programma che richieda un numero n positivo e, usando il crivello di Eratostene, trovi e stampi i numeri primi minori o uguali a n *(see example08)*.
 
+---
+level: 3
 
 ---
 
@@ -217,6 +252,8 @@ Scrivere un programma che richieda un numero n positivo e, usando il crivello di
 
 <<< @/snippets/example08/main.c c {*}{lines:true,maxHeight:'400px'}
 
+---
+level: 3
 
 ---
 
@@ -243,6 +280,9 @@ int matrice [ 5 ][ 10 ];
 ```
 
 ---
+level: 3
+
+---
 
 # Matrici
 
@@ -263,6 +303,8 @@ for (r=0; r<RIGHE; r++)
 ---
 layout: two-cols
 
+level: 3
+
 ---
 
 # Matrici
@@ -270,7 +312,6 @@ layout: two-cols
 - Le matrici sono memorizzate in un’area di memoria contigua per righe
 - La matrice m\[10\]\[20\] è memorizzata come 20 vettori consecutivi di 10 elementi
 - Un vettore o una matrice possono essere inizializzati elencando i valori delle singole celle della matrice o del vettore
-
 
 ::right::
 
@@ -280,6 +321,7 @@ layout: two-cols
 ```c
 int matrice [2][3] = {1,2,3,4,5,6};
 ```
+
 </Transform>
 <br>
 
@@ -287,6 +329,9 @@ int matrice [2][3] = {1,2,3,4,5,6};
 |---|---|---|---|
 |**0**|1|2|3|
 |**1**|4|5|6|
+
+---
+level: 3
 
 ---
 
@@ -302,6 +347,9 @@ int matrice [DIM_1][DIM_2]...[DIM_N] ;
 - Non è possibile copiare o confrontare due
 generici vettori (multidimensionali) usando gli
 operatori = o == sui nomi dei vettori stessi
+
+---
+level: 3
 
 ---
 
@@ -325,6 +373,9 @@ char character = 0x41;  // assegnazione con codice ASCI esadecimale
 </Transform>
 
 ---
+level: 3
+
+---
 
 # Caratteri
 
@@ -340,6 +391,9 @@ char character = 0x41;  // assegnazione con codice ASCI esadecimale
   - \\t - tabulazione
 
 ---
+level: 3
+
+---
 
 # Stringhe
 
@@ -351,6 +405,9 @@ char character = 0x41;  // assegnazione con codice ASCI esadecimale
 |---|---|---|
 |Null|0|0x00|
 |'0' (zero)|48|0x30|
+
+---
+level: 3
 
 ---
 
@@ -365,6 +422,9 @@ Esempio:
 |**Char**|H|e|l|l|o|!|**\0**|
 |**Dec**|72|101|108|108|111|33|**0**|
 |**Hex**|48|65|6C|6C|6F|21|**0**|
+
+---
+level: 3
 
 ---
 
@@ -385,6 +445,8 @@ Esempi:
 - Le stringhe variabili sono vettori di char di dimensione nota al momento della compilazione.
 - il vettore deve contenere anche il terminatore null.
 
+---
+level: 3
 
 ---
 
@@ -408,6 +470,9 @@ char str[MAX_LENGHT+1] = {‘H’,’e’,’l’,’l’,’o’} ;
   - str[1] è il secondo carattere
 
 ---
+level: 3
+
+---
 
 # Stringhe variabili
 
@@ -417,6 +482,8 @@ char str[MAX_LENGHT+1] = {‘H’,’e’,’l’,’l’,’o’} ;
 - Come per i vettori, il nome della stringa rappresenta per il compilatore una variabile contenente l'indirizzo di memoria del primo carattere della stringa.
 - Una stringa non può essere copiata con l'operatore '=', devo usare delle funzioni apposite.
 
+---
+level: 3
 
 ---
 
@@ -424,7 +491,7 @@ char str[MAX_LENGHT+1] = {‘H’,’e’,’l’,’l’,’o’} ;
 
 ## puts(nome_stringa)
 
-Visualizza *nome_stringa* e aggiunge un '\n' alla fine. 
+Visualizza *nome_stringa* e aggiunge un '\n' alla fine.
 
 ## gets(nome_stringa)
 
@@ -441,6 +508,8 @@ figureCaption: "source: cpprefence.com"
 
 figureUrl: /string_ctype.png
 
+level: 3
+
 ---
 
 # Stringhe - ctype.h
@@ -452,9 +521,14 @@ figureCaption: "source: cpprefence.com"
 
 figureUrl: /string_string1.png
 
+level: 3
+
 ---
 
 # Stringhe - string.h
+
+---
+level: 3
 
 ---
 
@@ -468,6 +542,9 @@ block-beta
 
     c12 --> c42
 ```
+
+---
+level: 3
 
 ---
 
@@ -484,12 +561,18 @@ sequenceDiagram
 ```
 
 ---
+level: 3
+
+---
 
 # Esercizi stringhe
 
 <Transform :scale='0.7' >
 <<< @/snippets/example09/main.c c {*}{lines:true}
 </Transform>
+
+---
+level: 3
 
 ---
 
@@ -500,12 +583,18 @@ sequenceDiagram
 </Transform>
 
 ---
+level: 3
+
+---
 
 # Esempio 11
 
 <Transform :scale='0.9' >
 <<< @/snippets/example11/main.c c {*}{lines:true}
 </Transform>
+---
+level: 3
+
 ---
 
 # Esempio 12
@@ -515,8 +604,11 @@ sequenceDiagram
 </Transform>
 
 ---
+level: 3
 
-# funzione 
+---
+
+# funzione
 
 ```c
 
@@ -525,8 +617,11 @@ float areaTriangolo( float base, float altezza) {
   return risultato ;
 }
 
-
 ```
+
+---
+level: 3
+
 ---
 
 # Esempio 14
@@ -538,6 +633,10 @@ float areaTriangolo( float base, float altezza) {
 <Transform :scale='0.4' >
 <<< @/snippets/example14/utility.c c {*}{lines:true}
 </Transform>
+
+---
+level: 3
+
 ---
 
 # Esempio 14
@@ -547,10 +646,13 @@ float areaTriangolo( float base, float altezza) {
 </Transform>
 
 ---
+level: 3
+
+---
 
 # struct
 
-```c 
+```c
 struct coordinate {
   float x;
   float y;
@@ -578,6 +680,9 @@ classDiagram
 ```
 
 ---
+level: 3
+
+---
 
 # typedef
 
@@ -596,12 +701,18 @@ classDiagram
 ```
 
 ---
+level: 3
+
+---
 
 # Esempio 15
 
 <Transform :scale='0.4' >
 <<< @/snippets/example15/main.c c {*}{lines:true}
 </Transform>
+
+---
+level: 3
 
 ---
 
@@ -632,6 +743,10 @@ if ( utente1.eta == utente2.eta
 }
 
 ```
+
+---
+level: 3
+
 ---
 
 # file
@@ -640,12 +755,16 @@ if ( utente1.eta == utente2.eta
 
 // stdio.h
 typedef	struct __sFILE {
- ...	
+ ...
 } FILE;
 
 FILE *my_file; 
 
 ```
+
+---
+level: 3
+
 ---
 
 # Esempio file
@@ -655,12 +774,18 @@ FILE *my_file;
 </Transform>
 
 ---
+level: 3
+
+---
 
 # struct & func
 
 <Transform :scale='0.9' >
 <<< @/snippets/example19/main.c c {*}{lines:true}
 </Transform>
+
+---
+level: 3
 
 ---
 
@@ -672,6 +797,9 @@ FILE *my_file;
 <Transform :scale='0.9' >
 <<< @/snippets/example20/output.txt csv {*}{lines:true}
 </Transform>
+
+---
+level: 3
 
 ---
 

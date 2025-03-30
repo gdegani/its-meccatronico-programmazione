@@ -1,5 +1,6 @@
 ---
 layout: cover
+
 coverDate: 
 
 --- 
@@ -10,7 +11,9 @@ Ing. Giancarlo Degani
 
 ---
 layout: two-cols
+
 level: 3
+
 ---
 
 # Esempio
@@ -26,6 +29,7 @@ level: 3
 
 ---
 level: 3
+
 ---
 
 # Operatori di confronto o relazionali
@@ -41,6 +45,7 @@ level: 3
 
 ---
 level: 3
+
 ---
 
 # Costanti intere decimali
@@ -61,6 +66,7 @@ level: 3
 
 ---
 level: 3
+
 ---
 
 # Costanti intere esadecimali
@@ -73,6 +79,7 @@ Una costante intera è considerata essere in base 16 se è preceduta da 0x oppur
 
 ---
 level: 3
+
 ---
 
 # Costanti numeriche
@@ -91,6 +98,7 @@ const double Pi = 4.0*atan(1.0);
 
 ---
 level: 3
+
 ---
 
 # Costanti simboliche
@@ -115,6 +123,7 @@ level: 3
 
 ---
 level: 3
+
 ---
 
 # Costanti simboliche
@@ -127,6 +136,7 @@ level: 3
 
 ---
 level: 3
+
 ---
 
 # Riferimenti
@@ -149,6 +159,7 @@ level: 3
 
 ---
 level: 3
+
 ---
 
 # Valutazione delle espressioni logiche
@@ -159,6 +170,7 @@ level: 3
 
 ---
 level: 3
+
 ---
 
 # Altri operatori
@@ -173,11 +185,12 @@ level: 3
 ---
 layout: two-cols
 level: 3
+
 ---
 
 # Esecuzione condizionale - IF
 
-- Viene valutata una condizione 
+- Viene valutata una condizione
 - Se la condizione è vera, l’elaborazione prosegue con il ramo di sinistra
 - Se la condizione è false,  l’elaborazione prosegue con il ramo di destra
 
@@ -195,13 +208,14 @@ flowchart TD
 
 ---
 level: 3
+
 ---
 
 # Esecuzione condizionale
 
 - Sintassi (minima): <br>
 
-```
+```txt
     if (condizione) <br>
        blocco istruzioni
 ```
@@ -213,6 +227,7 @@ level: 3
 ---
 layout: two-cols-header
 level: 3
+
 ---
 
 # Esempi
@@ -240,6 +255,7 @@ if( condizione ) {
 ---
 layout: two-cols
 level: 3
+
 ---
 
 # Esempio
@@ -257,6 +273,7 @@ level: 3
 ---
 layout: two-cols
 level: 3
+
 ---
 
 # Esecuzione condizionale - IF-ELSE
@@ -279,25 +296,28 @@ flowchart TD
 
 ---
 level: 3
+
 ---
+
 # ESERCIZIO
 
 Scrivere un programma per la gestione elementare di un carrello della spesa.
 Il programma deve chiedere input:
 
 - Il numero di oggetti contenuti nel carrello
-- Il prezzo unitario 
+- Il prezzo unitario
 
 Il programma deve calcolare il costo totale del carrello:
 
 - Se il numero di oggetti è maggiore di 10, applicare lo sconto del 10%
 - Calcorare il costo al lordo dell’IVA del 22%
-- Stampare a schermo (vedi esempio): 
+- Stampare a schermo (vedi esempio):
 
 Il dettaglio del carrello, l’imponibile, l’IVA, ed il totale lordo
 
 ---
 level: 3
+
 ---
 
 # ESERCIZIO
@@ -306,7 +326,7 @@ Output richiesto:
 
 <Transform :scale="2">
 
-```
+```txt
 ===== Dettaglio del Carrello =====
 Numero di oggetti: 12
 Prezzo unitario: 200.00
@@ -322,6 +342,7 @@ Totale lordo: 2635.20
 
 ---
 level: 3
+
 ---
 
 # SELEZIONE MULTIPLA - SWITCH
@@ -345,6 +366,7 @@ switch ( espressione ){
 
 ---
 level: 3
+
 ---
 
 # SELEZIONE MULTIPLA
@@ -358,6 +380,7 @@ istruzioni !
 
 ---
 level: 3
+
 ---
 
 # ITERAZIONI
@@ -377,6 +400,7 @@ printf(“2\n”);
 
 ---
 level: 3
+
 ---
 
 # ITERAZIONI
@@ -389,6 +413,7 @@ eseguite più volte
 ---
 layout: two-cols
 level: 3
+
 ---
 
 # ITERAZIONI: IL CICLO FOR
@@ -420,6 +445,7 @@ flowchart TD
 
 ---
 level: 3
+
 ---
 
 # ITERAZIONI: IL CICLO FOR
@@ -438,6 +464,7 @@ for ( **Inizializzazione**; **controllo**; **incremento**){
 layout: two-cols
 
 level: 3
+
 ---
 
 # ITERAZIONI: IL CICLO WHILE
@@ -467,6 +494,7 @@ flowchart TD
 
 ---
 level: 3
+
 ---
 
 # ITERAZIONI: IL CICLO WHILE
@@ -484,6 +512,7 @@ Blocco di istruzioni
 layout: two-cols
 
 level: 3
+
 ---
 
 # ESEMPIO: IL CICLO WHILE
@@ -505,6 +534,7 @@ level: 3
 layout: two-cols
 
 level: 3
+
 ---
 
 # ESEMPIO: il ciclo WHILE
@@ -525,6 +555,7 @@ Somma dei valori introdotti finché non viene immesso il valore 0
 layout: two-cols
 
 level: 3
+
 ---
 
 # EQUIVALENZA DI FOR E WHILE
@@ -547,6 +578,7 @@ I due esempi a fianco sono equivalenti.
 layout: two-cols
 
 level: 3
+
 ---
 
 # ITERAZIONI: IL CICLO DO-WHILE
@@ -575,6 +607,7 @@ flowchart TD
 
 ---
 level: 3
+
 ---
 
 # ITERAZIONI: IL CICLO DO-WHILE
@@ -591,6 +624,7 @@ Blocco di istruzioni
 ---
 layout: two-cols
 level: 3
+
 ---
 
 # ITERAZIONI: IL CICLO DO-WHILE
@@ -609,6 +643,7 @@ Stampa i numeri da 0 a 1000
 
 ---
 level: 3
+
 ---
 
 # CODIFICA DI NUMERI REALI
@@ -627,6 +662,7 @@ Esempio:
 
 ---
 level: 3
+
 ---
 
 # CODIFICA FLOATING-POINT DEI NUMERI REALI
@@ -657,6 +693,7 @@ $$
 
 ---
 level: 3
+
 ---
 
 # ESEMPIO
@@ -675,13 +712,16 @@ precisione finita.
 Per comodità di lettura il numero viene solitamente rappresentato in
 esadecimale:
 <Transform :scale="1.5">
-```
+
+```txt
 1100 0000 1011 1010 1000 0000 0000 0000 = C0 BA 80 00
 ```
+
 </Transform>
 
 ---
 level: 3
+
 ---
 
 # TIPI DI DATI PRIMITIVI PER NUMERI IN VIRGOLA MOBILE
@@ -694,6 +734,7 @@ level: 3
 
 ---
 level: 3
+
 ---
 
 # ESERCIZIO
@@ -712,11 +753,10 @@ Consegnare: il flowchart, il codice, lo screenshot dell'output
 ---
 layout: two-cols
 level: 3
+
 ---
 
 # ITERAZIONI: IL CICLO FOR ANNIDATO
-
-
 
 ::right::
 
@@ -730,6 +770,7 @@ level: 3
 
 ---
 level: 3
+
 ---
 
 # formula di newton
@@ -738,14 +779,14 @@ $$
  \left\{ \begin{array}{cl}\displaystyle \text{}
 x_{i+1} & = \frac{1}{2} (x_{i}+\frac{A}{x_{i}})\\
 x_{i=0} & =A
-\end{array} 
+\end{array}
 \right.
 
 $$
 ---
 level: 3
----
 
+---
 
 <br>
 $$

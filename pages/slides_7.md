@@ -1,11 +1,16 @@
 ---
 layout: cover
-coverDate:
+
+coverDate: ""
+
 ---
 
 # 7 -  Fondamenti di Informatica
 
 Ing. Giancarlo Degani
+
+---
+level: 3
 
 ---
 
@@ -18,12 +23,18 @@ Ing. Giancarlo Degani
 - **Deallocare** memoria significa rilasciare questa memoria al sistema operativo per renderla disponibile ad altri programmi
 
 ---
+level: 3
+
+---
 
 # Allocazione statica
 
 - Usata per variabili static o locali
 - Avviene durante la compilazione
 - Non può essere rilasciata o deallocata durante l’esecuzione del programma
+
+---
+level: 3
 
 ---
 
@@ -34,12 +45,18 @@ Ing. Giancarlo Degani
 - Viene gestita automaticamente dal compilatore
 
 ---
+level: 3
+
+---
 
 # Allocazione dinamica
 
 - La memoria viene allocata a run-time
 - Può essere deallocata a run-time
 - La responsabilità della deallocazione è del programmatore
+
+---
+level: 3
 
 ---
 
@@ -51,6 +68,9 @@ Ing. Giancarlo Degani
 - Non si può applicare l’operatore **sizeof** a un blocco di memoria allocato dinamicamente in quanto sizeof viene valutato dal compilatore
 
 ---
+level: 3
+
+---
 
 # <stdlib.h>
 
@@ -60,6 +80,9 @@ Ing. Giancarlo Degani
   - The calloc() function contiguously allocates enough space for count objects that are size bytes of memory each and returns a pointer to the allocated memory.  The allocated memory is filled with bytes of value zero
 - **void free(void \*ptr);**
   - The free() function deallocates the memory allocation pointed to by ptr. If ptr is a NULL pointer, no operation is performed.
+
+---
+level: 3
 
 ---
 
@@ -83,6 +106,9 @@ p=(double *)malloc(sizeof(double));
 ```
 
 ---
+level: 3
+
+---
 
 # Esempi di allocazione
 
@@ -103,6 +129,9 @@ p=(int *)malloc(sizeof(int)*100);
 *(p+12) = 19;
 p[12] = 19;
 ```
+
+---
+level: 3
 
 ---
 
@@ -129,6 +158,8 @@ p[12] = 19;
 ---
 layout: two-cols
 
+level: 3
+
 ---
 
 # Esempio
@@ -138,10 +169,16 @@ layout: two-cols
 <<< @/snippets/example23/main.c c {all}{lines:true}
 
 ---
+level: 3
+
+---
 
 # Esempio
 
 <<< @/snippets/example22/main.c#part1 c {all}{lines:true}
+
+---
+level: 3
 
 ---
 
@@ -150,16 +187,23 @@ layout: two-cols
 <<< @/snippets/example22/main.c#part2 c {all}{lines:true, startLine:17}
 
 ---
+level: 3
+
+---
 
 # Esercizio
 
-Si scriva un programma che ordini in senso crescente i valori contenuti in un file di testo e li scriva in un’altro. Non è noto a priori quanti siano i valori contenuti nel file. Si utilizzi una funzione per l’ordinamento. Il programma, per allocare un vettore dinamico di dimensione appropriata, nel main:
+Si scriva un programma che ordini in senso crescente i valori contenuti in un file di testo e li scriva in un’altro. Non è noto a priori quanti siano i valori contenuti nel file.
+Si utilizzi una funzione per l’ordinamento. Il programma, per allocare un vettore dinamico di dimensione appropriata, nel main:
 
 - conta quanti sono i valori leggendoli dal file e scartandoli
 - crea il vettore dinamico di dimensione adeguata
 - lo riempie rileggendo il file
 - lo passa alla funzione di ordinamento
 - scrive il file di output con il contenuto del vettore riordinato
+
+---
+level: 3
 
 ---
 
@@ -169,6 +213,9 @@ Si scriva un programma che ordini in senso crescente i valori contenuti in un fi
 - Il collegamento è costituito da un puntatore all’area di memoria contenente l’elemento successivo della lista
 
 ![Liste](/list1.png)
+
+---
+level: 3
 
 ---
 
@@ -181,11 +228,11 @@ Si scriva un programma che ordini in senso crescente i valori contenuti in un fi
 ---
 layout: two-cols
 
+level: 3
+
 ---
 
 # Implementazione con struct
-
-
 
 - **valore** è l’informazione contenuta nel singolo elemento della lista
 - **head** è il puntatore al primo elemento della lista (testa della lista)
@@ -198,12 +245,18 @@ layout: two-cols
 <<< @/snippets/example24/simple_list.c#snippet1 c {*}{lines:true}
 
 ---
+level: 3
+
+---
 
 # Inserimento in testa alla lista 1
 
 Situazione iniziale con una lista non vuota
 
 ![Inserimento in testa alla lista](/list2.png)
+
+---
+level: 3
 
 ---
 
@@ -214,6 +267,9 @@ Creo una nuova variabile per contenere il nuovo elemento della lista
 ![Inserimento in testa alla lista](/list3.png)
 
 ---
+level: 3
+
+---
 
 # Inserimento in testa alla lista 3
 
@@ -222,12 +278,18 @@ Copio il valore ed il puntatore alla testa della lista nel nuovo elemento
 ![Inserimento in testa alla lista](/list4.png)
 
 ---
+level: 3
+
+---
 
 # Inserimento in testa alla lista 4
 
 Cambio il valore di Head
 
 ![Inserimento in testa alla lista](/list5.png)
+
+---
+level: 3
 
 ---
 
@@ -241,6 +303,9 @@ Cambio il valore di Head
 ![Rimozione dalla testa](/list6.png)
 
 ---
+level: 3
+
+---
 
 # Liste bidirezionali
 
@@ -249,8 +314,11 @@ Situazione iniziale con una lista non vuota
 ![Rimozione dalla testa](/list7.png)
 
 ---
+level: 3
 
-# List2 di liste
+---
+
+# Liste di liste
 
 - Posso suddividere la lista in parti per rendere più veloce la navigazione all’interno della lista
 - Uso un algoritmo di hashing per definire il partizionamento e quindi la ricerca
@@ -261,6 +329,8 @@ Situazione iniziale con una lista non vuota
 
 ---
 layout: two-cols
+
+level: 3
 
 ---
 
@@ -280,6 +350,9 @@ layout: two-cols
 </Transform>
 
 ---
+level: 3
+
+---
 
 # Esempio di menù
 
@@ -297,6 +370,9 @@ x. Exit
 Scelta: 
 
 ```
+
+---
+level: 3
 
 ---
 

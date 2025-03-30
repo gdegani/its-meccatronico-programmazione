@@ -54,31 +54,12 @@ src: ./pages/slides_2.md
 ---
 
 ---
-hide: true
-
----
-src: ./pages/slides1_3.md
+src: ./pages/slides_3.md
 
 ---
 
 ---
-hide: true
-
----
-src: ./pages/slides2_1.md
-
----
-
----
-hide: true
-
----
-src: ./pages/slides3_1.md
-
----
-
----
-src: ./pages/slides4_1.md
+src: ./pages/slides_4.md
 
 ---
 

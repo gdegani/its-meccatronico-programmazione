@@ -36,6 +36,7 @@ layout: image-right
 image: /clion1.png
 
 level: 3
+
 ---
 
 # CLion
@@ -58,6 +59,7 @@ level: 3
 
 ---
 level: 3
+
 ---
 
 # Riferimenti
@@ -600,6 +602,7 @@ level: 3
 
 ---
 level: 3
+
 ---
 
 # Esempi
@@ -643,6 +646,8 @@ $$
 
 ---
 layout: two-cols
+
+level: 3
 
 ---
 
@@ -704,6 +709,7 @@ level: 3
 
 ---
 level: 3
+
 ---
 
 # Rappresentazione di interi in modulo e segno
@@ -717,6 +723,7 @@ level: 3
 
 ---
 level: 3
+
 ---
 
 # Rappresentazione di interi in modulo e segno
@@ -732,6 +739,7 @@ Si possono rappresentare i seguenti numeri:
 
 ---
 level: 3
+
 ---
 
 # Il complemento a due
@@ -769,14 +777,20 @@ level: 3
 
 ---
 layout: image
+
 image: /ascii.png
+
 backgroundSize: contain
+
 level: 3
+
 title: Tabella ASCII
+
 ---
 
 ---
 level: 3
+
 ---
 
 # UNICODE
@@ -787,6 +801,7 @@ level: 3
 
 ---
 level: 3
+
 ---
 
 # UNICODE
@@ -822,7 +837,9 @@ level: 3
 layout: image-right
 
 image: /pancake.png
+
 level: 3
+
 ---
 
 # Ricetta
@@ -835,6 +852,7 @@ level: 3
 
 ---
 level: 3
+
 ---
 
 # Problema
@@ -845,6 +863,7 @@ level: 3
 
 ---
 level: 3
+
 ---
 
 # Programma
@@ -856,6 +875,7 @@ level: 3
 
 ---
 level: 3
+
 ---
 
 # Traduttori in linguaggio macchina
@@ -865,6 +885,7 @@ level: 3
 
 ---
 level: 3
+
 ---
 
 # Pro e contro
@@ -876,6 +897,7 @@ Velocità di esecuzione:
 
 ---
 level: 3
+
 ---
 
 # Pro e contro
@@ -886,6 +908,7 @@ Prerequisiti:
 
 ---
 level: 3
+
 ---
 
 # Pro e contro
@@ -896,6 +919,7 @@ Proprietà intellettuale:
 
 ---
 level: 3
+
 ---
 
 # Linguaggi di programmazione
@@ -915,6 +939,7 @@ layout: image-right
 image: /binary.png
 
 level: 3
+
 ---
 
 # Linguaggio macchina
@@ -953,7 +978,9 @@ Stampa la scritta “hello world”.
 
 ---
 layout: two-cols
+
 level: 3
+
 ---
 
 # Linguaggio Python

@@ -12,6 +12,7 @@ level: 3
 layout: image-right
 
 image: /kernighan.png
+
 ---
 
 # Il linguaggio C
@@ -109,7 +110,9 @@ Il processo di creazione di un eseguibile a partire dai sorgenti è composto da 
 
 ---
 level: 3
+
 ---
+
 # Librerie
 
 - In un linguaggio ad alto livello le funzioni di base sono fornite dal linguaggio ( lettura da tastiera, scrittura su schermo, lettura/scrittura da file)
@@ -118,7 +121,9 @@ level: 3
 
 ---
 layout: two-cols
+
 level: 3
+
 ---
 
 # Librerie statiche
@@ -137,7 +142,9 @@ flowchart TB
 
 ---
 layout: two-cols
+
 level: 3
+
 ---
 
 # Librerie statiche
@@ -163,7 +170,9 @@ flowchart TB
 
 ---
 layout: two-cols
+
 level: 3
+
 ---
 
 # Librerie dinamiche
@@ -197,13 +206,12 @@ flowchart TB
     a3<-.->a5
 ```
 
-
 ---
 level: 3
+
 ---
 
 ## title
-
 
 |           |    |   |   |   |   |   |   |
 |---        |--- |---|---|---|---|---|---|
@@ -230,7 +238,9 @@ flowchart TD
 
 ---
 layout: two-cols-small-header
+
 level: 3
+
 ---
 
 # Code
@@ -245,10 +255,13 @@ left
 
 ---
 layout: two-cols
+
 level: 3
+
 ---
 
 # latex
+
 asd ad a
 sadsd
 
@@ -259,7 +272,9 @@ sadsd
 
 ---
 layout: two-cols
+
 level: 3
+
 ---
 
 # Code
@@ -274,6 +289,7 @@ left
 
 ---
 level: 3
+
 ---
 
 # Esempio for
