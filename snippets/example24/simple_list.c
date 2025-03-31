@@ -9,10 +9,12 @@ static struct nodo {
 } *head = NULL, *p, *q; // 3 pointers to a nodo
 // #endregion snippet1
 
-int AddToHead(int v) {
-    if (  (p = (struct nodo *) malloc(sizeof(struct nodo)))
-          != NULL) { // allocate memory for a node
-        p->valore = v;
+int AddToHead(int valoreInput) {
+    void * puntatore =  malloc(sizeof(struct nodo));
+    p = (struct nodo *) puntatore;
+
+    if (  p!= NULL) { // allocate memory for a node
+        p->valore = valoreInput;
         p->next = head;
         head = p; // replace the head
         printAll();

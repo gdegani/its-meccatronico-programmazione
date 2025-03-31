@@ -105,6 +105,13 @@ p=(double *)malloc(sizeof(double));
 *p = 1.9;
 ```
 
+- Deallocazione:
+
+```c
+free(p);
+```
+
+
 ---
 level: 3
 

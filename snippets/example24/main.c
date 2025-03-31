@@ -21,9 +21,11 @@ int main() {
 
         switch (scelta[0]) {
             case 'a':
+            case 'A':
                 printf("Valore da inserire: ");
                 scanf("%d", &v);
-                if (AddToHead(v) == LIST_ERROR)
+                int returnValue = AddToHead(v);
+                if (returnValue == LIST_ERROR)
                     printf("Errore!\n");
                 break;
             case 'b':
